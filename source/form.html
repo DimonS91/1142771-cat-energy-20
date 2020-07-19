@@ -28,7 +28,91 @@
   </header>
 
   <main class="page-main">
+    <section class="form">
+      <h2 class="form__title">Подбор программы</h2>
+      <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <form action="https://echo.htmlacademy.ru" method="post" class="form-order">
+        <fieldset class="form-order__information">
+          <label>
+            Имя:
+            <input type="text" name="name" placeholder="Барсик">
+          </label><br>
+          <label>
+            Вес (кг):
+            <input type="text" name="weight" placeholder="7">
+          </label><br>
+          <label>
+            Возраст (лет):
+            <input type="text" name="age" placeholder="7">
+          </label>
+        </fieldset>
 
+        <fieldset class="form-order__radio-area">
+          <label>
+            <input type="radio" name="goal" value="slim" checked>
+            Похудение
+          </label><br>
+          <label>
+            <input type="radio" name="goal" value="weight">
+            Набор массы
+          </label><br>
+          <label>
+            <input type="radio" name="goal" value="advice">
+            Не знаю (нужен ваш совет)
+          </label>
+        </fieldset>
+
+        <fieldset class="form-order__contacts">
+          <legend>Контактные данные (владельца кота)</legend>
+          <label>
+            E-MAIL:
+            <input type="email" name="email" placeholder="kuklachev@gmail.com">
+          </label><br>
+          <label>
+            ТЕЛЕФОН:
+            <input type="text" name="phone" placeholder="8 (960) 900-60-90">
+          </label>
+        </fieldset>
+
+        <fieldset class="form-order__comment">
+          <legend>Комментарий</legend>
+          <textarea name="comment" id="" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+
+        <fieldset class="form-order__checkbox-area">
+          <legend>Дополнительно</legend>
+          <label>
+            <input type="checkbox" checked>
+            Сахарозаменитель
+          </label><br>
+          <label>
+            <input type="checkbox">
+            Питьевая вода
+          </label><br>
+          <label>
+            <input type="checkbox">
+            Молоко
+          </label><br>
+          <label>
+            <input type="checkbox">
+            Витамины
+          </label>
+        </fieldset>
+
+        <button class="form-order__button button">Отправить заявку</button>
+      </form>
+
+    </section>
+
+    <section class="cooperation">
+      <div class="cooperation-wrapper">
+        <h2 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h2>
+        <p class="cooperation__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div class="cooperation-map">
+        <!-- здесь будет карта -->
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
