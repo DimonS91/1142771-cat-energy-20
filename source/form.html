@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
+
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo">
@@ -34,75 +36,97 @@
       <form action="https://echo.htmlacademy.ru" method="post" class="form-order">
         <fieldset class="form-order__information">
           <label>
-            Имя:
-            <input type="text" name="name" placeholder="Барсик">
-          </label><br>
+            Имя:<sup>*</sup>
+            <input type="text" name="name" placeholder="Барсик" required>
+          </label>
           <label>
-            Вес (кг):
-            <input type="text" name="weight" placeholder="7">
-          </label><br>
+            Вес (кг):<sup>*</sup>
+            <input type="text" name="weight" placeholder="7" required>
+          </label>
           <label>
             Возраст (лет):
             <input type="text" name="age" placeholder="7">
           </label>
         </fieldset>
 
-        <fieldset class="form-order__radio-area">
-          <label>
-            <input type="radio" name="goal" value="slim" checked>
-            Похудение
-          </label><br>
-          <label>
-            <input type="radio" name="goal" value="weight">
-            Набор массы
-          </label><br>
-          <label>
-            <input type="radio" name="goal" value="advice">
-            Не знаю (нужен ваш совет)
-          </label>
+        <fieldset class="form-order__radio">
+          <ul class="form-order__radio-fields">
+            <li class="form-order__radio-field">
+              <label>
+                <input type="radio" name="goal" value="slim" checked class="visually-hidden">
+                Похудение
+              </label>
+            </li>
+            <li class="form-order__radio-field">
+              <label>
+                <input type="radio" name="goal" value="weight" class="visually-hidden">
+                Набор массы
+              </label>
+            </li>
+            <li class="form-order__radio-field">
+              <label>
+                <input type="radio" name="goal" value="advice" class="visually-hidden">
+                Не знаю (нужен ваш совет)
+              </label>
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="form-order__contacts">
           <legend>Контактные данные (владельца кота)</legend>
           <label>
-            E-MAIL:
-            <input type="email" name="email" placeholder="kuklachev@gmail.com">
-          </label><br>
+            E-MAIL:<sup>*</sup>
+            <input type="email" name="email" placeholder="kuklachev@gmail.com" required>
+          </label>
           <label>
-            ТЕЛЕФОН:
-            <input type="text" name="phone" placeholder="8 (960) 900-60-90">
+            ТЕЛЕФОН:<sup>*</sup>
+            <input type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
           </label>
         </fieldset>
 
         <fieldset class="form-order__comment">
           <legend>Комментарий</legend>
-          <textarea name="comment" id="" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
-        <fieldset class="form-order__checkbox-area">
+        <fieldset class="form-order__checkbox">
           <legend>Дополнительно</legend>
-          <label>
-            <input type="checkbox" checked>
-            Сахарозаменитель
-          </label><br>
-          <label>
-            <input type="checkbox">
-            Питьевая вода
-          </label><br>
-          <label>
-            <input type="checkbox">
-            Молоко
-          </label><br>
-          <label>
-            <input type="checkbox">
-            Витамины
-          </label>
+          <ul class="form-order__checkbox-fields">
+            <li class="form-order__checkbox-field">
+              <label>
+                <input type="checkbox" checked class="visually-hidden">
+                Сахарозаменитель
+              </label>
+            </li>
+            <li class="form-order__checkbox-field">
+              <label>
+                <input type="checkbox" class="visually-hidden">
+                Питьевая вода
+              </label>
+            </li>
+            <li class="form-order__checkbox-field">
+              <label>
+                <input type="checkbox" class="visually-hidden">
+                Молоко
+              </label>
+            </li>
+            <li class="form-order__checkbox-field">
+              <label>
+                <input type="checkbox" class="visually-hidden">
+                Витамины
+              </label>
+            </li>
+          </ul>
         </fieldset>
 
-        <button class="form-order__button button">Отправить заявку</button>
+        <button class="form-order__button button" type="submit">Отправить заявку</button>
+        <small>* — Обязательные поля</small>
       </form>
-
     </section>
+
+  </main>
+
+  <footer class="page-footer">
 
     <section class="cooperation">
       <div class="cooperation-wrapper">
@@ -113,9 +137,7 @@
         <!-- здесь будет карта -->
       </div>
     </section>
-  </main>
 
-  <footer class="page-footer">
     <div class="page-footer__logo">
       <img src="#" alt="Логотип">
     </div>
@@ -141,4 +163,5 @@
   </footer>
 
 </body>
+
 </html>
