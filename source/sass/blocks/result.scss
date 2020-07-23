@@ -15,11 +15,11 @@
 }
 
 .result__description {
-  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   margin: 0 auto;
   padding-top: 33px;
   padding-bottom: 25px;
+  color: $main-color-text;
 }
 
 .result__stats-item {
