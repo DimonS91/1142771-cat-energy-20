@@ -1,13 +1,33 @@
+@font-face {
+  font-family: "Oswald";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/oswaldregular.woff") format("woff"),
+    url("../fonts/oswaldregular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/oswaldmedium.woff") format("woff"),
+    url("../fonts/oswaldmedium.woff2") format("woff2");
+}
+
 body {
   font-family: "Oswald", "Helvetica", sans-serif;
 }
 
-p {
+.text-font {
   font-family: "Arial", "Helvetica", sans-serif;
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .reset-list {
@@ -15,5 +35,3 @@ p {
   margin: 0;
   list-style: none;
 }
-
-$button-color : #68b738;

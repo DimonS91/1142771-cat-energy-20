@@ -1,5 +1,5 @@
 .promo {
-  background: url("../../img/index-background-mobile@1x.jpg") no-repeat;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
   width: 320px;
   min-height: 305px;
   margin: auto;
@@ -30,18 +30,5 @@
   line-height: 14px;
   text-transform: uppercase;
   color: #ffffff;
-  text-align: center;
-}
-
-.button {
-  display: block;
-  padding: 7px 44px;
-  background-color: $button-color;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: normal;
-  text-transform: uppercase;
   text-align: center;
 }
