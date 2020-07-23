@@ -1,23 +1,30 @@
 .result {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
+}
+
+.result-wrapper {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .result__title {
   font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+  padding-top: 27px;
 }
 
 .result__description {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   margin: 0 auto;
-}
-
-.result__stats-list {
-  list-style: none;
+  padding-top: 33px;
+  padding-bottom: 25px;
 }
 
 .result__stats-item {
-  border: 1px solid #CDCDCD;
+  display: inline;
+  border: 1px solid #cdcdcd;
   border-radius: 3px;
 }
 

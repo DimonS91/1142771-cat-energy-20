@@ -1,34 +1,47 @@
 .promo {
-  background: url('../../img/index-background-mobile@1x.jpg') no-repeat;
+  background: url("../../img/index-background-mobile@1x.jpg") no-repeat;
   width: 320px;
   min-height: 305px;
+  margin: auto;
+}
+
+.promo-wrapper {
+  width: 280px;
+  margin: auto;
 }
 
 .promo__title {
   margin: 0;
   font-size: 36px;
-  color: #fff;
+  line-height: 36px;
+  color: #ffffff;
   font-weight: 400;
+  font-style: normal;
   text-align: center;
   padding-top: 27px;
 }
 
 .promo__description {
+  font-family: "Oswald", "Helvetica", sans-serif;
   margin: 0;
   padding-top: 25px;
   padding-bottom: 302px;
   font-size: 14px;
+  line-height: 14px;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
 }
 
 .button {
-  display: inline-block;
+  display: block;
   padding: 7px 44px;
-  background-color: #68B738;
-  color: #fff;
+  background-color: $button-color;
+  color: #ffffff;
   text-decoration: none;
   font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
   text-transform: uppercase;
+  text-align: center;
 }

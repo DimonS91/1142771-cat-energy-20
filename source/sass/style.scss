@@ -1,12 +1,10 @@
-@import "../sass/blocks/normalize.scss";
-@import "../sass/blocks/page_body.scss";
-@import "../sass/blocks/page_header.scss";
-@import "../sass/blocks/promo.scss";
-@import "../sass/blocks/programs.scss";
-@import "../sass/blocks/preference.scss";
-@import "../sass/blocks/result.scss";
-@import "../sass/blocks/cooperation.scss";
-@import "../sass/blocks/catalog.scss";
-
-
-
+@import "blocks/normalize.scss";
+@import "base.scss";
+@import "blocks/page.scss";
+@import "blocks/promo.scss";
+@import "blocks/programs.scss";
+@import "blocks/preference.scss";
+@import "blocks/result.scss";
+@import "blocks/cooperation.scss";
+@import "blocks/catalog.scss";
+@import "blocks/footer.scss";
