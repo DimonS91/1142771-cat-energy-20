@@ -1,0 +1,30 @@
+.additional-products-title {
+  color: $card-poducts-title;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.additional-products-item b {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.additional-products-item__table {
+  font-size: 14px;
+  line-height: 14px;
+  color: $main-color-text;
+}
+
+.additional-products-all {
+  background: url("../../img/gift-photo-mobile@1x.jpg");
+  min-height: 289px;
+}
+
+.additional-products-all__description {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
