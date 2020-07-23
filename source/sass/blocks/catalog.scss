@@ -1,0 +1,43 @@
+.catalog__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+}
+
+.catalog-item__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.catalog-item__table {
+  font-size: 12px;
+  font-family: "Arial", "Helvetica", sans-serif;
+}
+
+.catalog-item-all__title {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.catalog-item-all__button {
+  display: block;
+  padding: 7px 44px;
+  background-color: #f2f2f2;
+  color: #444444;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.catalog-wrapper {
+  width: 280px;
+  margin: auto;
+}

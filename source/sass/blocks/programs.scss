@@ -1,0 +1,42 @@
+.programs-wrapper {
+  margin: auto;
+}
+
+.programs-item-wrapper {
+  width: 227px;
+  margin: auto;
+}
+
+.programs-item {
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-bottom: 18px;
+  background-color: #f2f2f2;
+}
+
+.programs-item__title {
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 30px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.programs-item__description {
+  width: 227px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin: 0 auto;
+  padding-top: 29px;
+  padding-bottom: 38px;
+}
+
+.programs-item__link {
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
