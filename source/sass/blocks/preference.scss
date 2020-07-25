@@ -1,8 +1,26 @@
+@media (min-width: $tablet-width) {
+  .preference__list {
+    margin: auto;
+    max-width: 708px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .preference__list {
+    margin: auto;
+    max-width: 1220px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+  }
+}
+
 .preference__title {
   font-size: 36px;
   font-weight: normal;
   text-align: center;
-  margin: 0;
   padding-top: 27px;
 }
 
@@ -11,4 +29,5 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
+  padding-bottom: 20px;
 }

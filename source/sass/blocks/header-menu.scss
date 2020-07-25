@@ -1,0 +1,45 @@
+@media (min-width: $tablet-width) {
+  .header-menu {
+    max-width: 708px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__link {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header-menu {
+    max-width: 1220px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    width: 477px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__link {
+    font-size: 20px;
+  }
+}
