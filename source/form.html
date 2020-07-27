@@ -41,37 +41,39 @@
         <h2 class="form__title">Подбор программы</h2>
         <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form action="https://echo.htmlacademy.ru" method="post" class="form-order">
-          <fieldset class="form-order form-order__information">
-            <label class="form-order__label">
-              Имя:<sup>*</sup>
-              <input type="text" name="name" placeholder="Барсик" required>
-            </label>
-            <label class="form-order__label">
-              Вес (кг):<sup>*</sup>
-              <input type="text" name="weight" placeholder="7" required>
-            </label>
-            <label class="form-order__label">
-              Возраст (лет):
-              <input type="text" name="age" placeholder="7">
-            </label>
-          </fieldset>
+          <div class="form-wrapper">
+            <fieldset class="form-order form-order__information">
+              <label class="form-order__label">
+                Имя:<sup>*</sup>
+                <input type="text" name="name" placeholder="Барсик" required>
+              </label>
+              <label class="form-order__label">
+                Вес (кг):<sup>*</sup>
+                <input type="text" name="weight" placeholder="7" required>
+              </label>
+              <label class="form-order__label">
+                Возраст (лет):
+                <input type="text" name="age" placeholder="7">
+              </label>
+            </fieldset>
 
-          <fieldset class="form-order form-order__radio">
-            <ul class="form-order__radio-fields reset-list">
-              <li class="form-order__radio-field">
-                <input type="radio" id="slimming" name="goal" value="slim" checked class="visually-hidden">
-                <label for="slimming" class="form-order__label">Похудение</label>
-              </li>
-              <li class="form-order__radio-field">
-                <input type="radio" id="weight-gain" name="goal" value="weight" class="visually-hidden">
-                <label for="weight-gain" class="form-order__label">Набор массы</label>
-              </li>
-              <li class="form-order__radio-field">
-                <input type="radio" id="need-advice" name="goal" value="advice" class="visually-hidden">
-                <label for="need-advice" class="form-order__label">Не знаю (нужен ваш совет)</label>
-              </li>
-            </ul>
-          </fieldset>
+            <fieldset class="form-order form-order__radio">
+              <ul class="form-order__radio-fields reset-list">
+                <li class="form-order__radio-field">
+                  <input type="radio" id="slimming" name="goal" value="slim" checked class="visually-hidden">
+                  <label for="slimming" class="form-order__label">Похудение</label>
+                </li>
+                <li class="form-order__radio-field">
+                  <input type="radio" id="weight-gain" name="goal" value="weight" class="visually-hidden">
+                  <label for="weight-gain" class="form-order__label">Набор массы</label>
+                </li>
+                <li class="form-order__radio-field">
+                  <input type="radio" id="need-advice" name="goal" value="advice" class="visually-hidden">
+                  <label for="need-advice" class="form-order__label">Не знаю (нужен ваш совет)</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
           <fieldset class="form-order form-order__contacts">
             <legend class="form-order__title">Контактные данные (владельца кота)</legend>
@@ -123,15 +125,17 @@
 
   <footer class="page-footer">
 
-    <section class="cooperation">
+    <section class="cooperation catalog-and-form">
 
       <div class="container">
-        <h2 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h2>
-        <p class="cooperation__description text-font">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="cooperation-wrapper">
+          <h2 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h2>
+          <p class="cooperation__description text-font">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
       </div>
 
       <div class="cooperation-map">
-        <!-- здесь будет карта -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.320858716211177!3d59.938719169054096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595849989962!5m2!1sru!2sru" width="100%" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
     </section>
 
