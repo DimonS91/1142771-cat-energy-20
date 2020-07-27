@@ -1,3 +1,31 @@
+@media (min-width: $tablet-width) {
+  .catalog-list {
+    margin: auto;
+    max-width: 708px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+
+  .catalog-item {
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-list {
+    margin: auto;
+    max-width: 1220px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+  }
+
+  .catalog-item {
+    background-color: #f2f2f2;
+  }
+}
+
 .catalog__title {
   font-size: 36px;
   line-height: 36px;

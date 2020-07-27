@@ -1,10 +1,21 @@
-.programs-item-wrapper {
-  width: 227px;
-  margin: auto;
+@media (min-width: $tablet-width) {
+  .programs-wrapper {
+    max-width: 708px;
+    margin: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs-wrapper {
+    margin: auto;
+    max-width: 1220px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .programs-item {
-  width: 280px;
   margin: 0 auto;
   margin-top: 20px;
   padding-bottom: 18px;
@@ -22,7 +33,6 @@
 }
 
 .programs-item__description {
-  width: 227px;
   font-size: 14px;
   line-height: 18px;
   color: $main-color-text;
