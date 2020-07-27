@@ -1,11 +1,56 @@
 .cooperation__title {
+  margin: 0;
+  width: 142px;
   font-size: 16px;
   line-height: 18px;
   font-weight: normal;
   text-transform: uppercase;
+  color: #111111;
+
+  @media (min-width: $tablet-width) {
+    width: 171px;
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 163px;
+  }
 }
 
 .cooperation__description {
+  margin: 0;
+  width: 142px;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 159px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 155px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.cooperation-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    position: absolute;
+    width: 570px;
+  }
+}
+
+.catalog-and-form {
+  background-color: #f2f2f2;
 }

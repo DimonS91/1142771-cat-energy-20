@@ -22,12 +22,49 @@
   color: $main-color-text;
 }
 
+.result__stats-list {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 366px;
+  }
+}
+
 .result__stats-item {
-  display: inline;
+  width: 124px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 162px;
+  }
+}
+
+.result__stats-item b {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.result__stats-item small {
+  display: block;
+  font-size: 12px;
+  line-height: 12px;
+  color: $main-color-text;
 }
 
 .result__food-costs {
   text-align: center;
+}
+
+.result__range {
+  width: 228px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
 }

@@ -24,8 +24,9 @@ body {
 }
 
 .container {
-  min-width: 280px;
+  width: 280px;
   padding: 0 20px;
+  margin: auto;
 }
 
 @media (min-width: $tablet-width) {
