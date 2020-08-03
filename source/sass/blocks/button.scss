@@ -1,6 +1,8 @@
 .button {
   display: block;
-  padding: 7px 44px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin-top: 2px;
   background-color: $button-color;
   color: #ffffff;
   text-decoration: none;
@@ -9,4 +11,52 @@
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
+}
+
+.promo__button {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    display: inline-block;
+    font-size: 20px;
+    padding: 18px 26px;
+    top: 277px;
+    margin-left: 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 455px;
+    margin-left: 80px;
+  }
+}
+
+.catalog-item__button {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 93px;
+    margin-left: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 53px;
+  }
+}
+
+.catalog-item-all__button {
+  margin-top: 21px;
+  background-color: #f2f2f2;
+  color: #444444;
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 78px 12px 78px;
+    margin-left: 38px;
+    margin-top: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 39px;
+  }
 }

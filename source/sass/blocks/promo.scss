@@ -1,10 +1,56 @@
 .promo {
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
-  background-size: 100%;
-  min-height: 305px;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    min-height: 696px;
+    margin-top: -131px;
+    z-index: -1;
+  }
 }
 
+.promo-background {
+  position: absolute;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 305px;
+  background-position: center center;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat;
+    background-position: right;
+    height: 696px;
+  }
+}
+
+// .promo-background2 {
+//   position: absolute;
+//   background: url("../img/index-can-mobile@1x.png") no-repeat;
+//   background-position: center center;
+//   width: 280px;
+//   height: 270px;
+
+
+//   @media (min-width: $tablet-width) {
+//     background: url("../img/index-can-tablet@1x.jpg") no-repeat;
+//     background-position: center center;
+//     width: 100%;
+//     height: 609px;
+//   }
+
+//   @media (min-width: $tablet-width) {
+//     background: url("../img/index-can-desktop@1x.png") no-repeat;
+//     background-position: center center;
+//   }
+// }
+
 .promo__title {
+  position: relative;
   margin: 0;
   font-size: 36px;
   line-height: 36px;
@@ -13,15 +59,78 @@
   font-style: normal;
   text-align: center;
   padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    width: 414px;
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 50px;
+    padding-left: 87px;
+    text-align: left;
+    padding-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 223px;
+    padding-left: 80px;
+  }
 }
 
 .promo__description {
+  position: relative;
   margin: 0;
   padding-top: 25px;
-  padding-bottom: 302px;
+  padding-bottom: 29px;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    padding-left: 87px;
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
+}
+
+.promo-image-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.promo-image-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.promo-image-desktop {
+  display: none;
+
+  // @media (min-width: $desktop-width) {
+  //   display: block;
+  //   top: 143px;
+  //   margin: auto;
+  // }
 }
