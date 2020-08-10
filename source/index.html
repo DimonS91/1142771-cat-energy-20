@@ -51,10 +51,8 @@
       <div class="container">
         <h2 class="promo__title">Функциональное питание для котов</h2>
         <p class="promo__description">Занялся собой? Займись котом!</p>
-        <img src="img/index-can-mobile@1x.png" width="280" height="270" alt="Картинка корма"
-          class="promo-image-mobile">
-        <img src="img/index-can-tablet@1x.jpg" width="709" height="609" alt="Картинка корма"
-          class="promo-image-tablet">
+        <img src="img/index-can-mobile@1x.png" width="280" height="270" alt="Картинка корма" class="promo-image-mobile">
+        <img src="img/index-can-tablet@1x.jpg" width="709" height="609" alt="Картинка корма" class="promo-image-tablet">
         <img src="img/index-can-desktop@1x.png" width="552" height="499" alt="Картинка корма"
           class="promo-image-desktop">
         <a href="#" class="promo__button button">Подобрать программу</a>
@@ -114,33 +112,47 @@
 
     <section class="result">
       <div class="container">
-        <h2 class="result__title">Живой пример</h2>
-        <p class="result__description text-font">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок!
-          При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <ul class="result__stats-list reset-list">
-          <li class="result__stats-item">
-            <b>5 кг</b>
-            <small class="text-font">снижение веса</small>
-          </li>
-          <li class="result__stats-item">
-            <b>60 дней</b>
-            <small class="text-font">затрачено времени</small>
-          </li>
-        </ul>
-        <p class="result__food-costs">Затраты на питание: 15 000 РУБ.</p>
-        <img class="result__slimming-cat" src="#" alt="Результат похудения котика">
-        <div class="result__range">
-          <button type="button">Было</button>
-          <div class="result__range-cotrol">
-            <div class="result__range-scale">
-              <div class="result__range-bar"></div>
-            </div>
+        <div>
+          <h2 class="result__title">Живой пример</h2>
+          <p class="result__description text-font">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+            Отличный результат без изнуряющих тренировок!
+            При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <div class="result-stats">
+            <ul class="result__stats-list reset-list">
+              <li class="result__stats-item">
+                <b>5 кг</b>
+                <small class="text-font">снижение веса</small>
+              </li>
+              <li class="result__stats-item">
+                <b>60 дней</b>
+                <small class="text-font">затрачено времени</small>
+              </li>
+            </ul>
+            <p class="result__food-costs">Затраты на питание: <span>15 000 РУБ.</span></p>
           </div>
-          <button type="button">Стало</button>
+          <div class="result-inner"></div>
         </div>
+
+        <div>
+          <img class="result__slimming-cat" src="img/before-mobile@1x.png" alt="Результат похудения котика">
+          <img class="result__slimming-cat visually-hidden" src="img/after-mobile@1x.png"
+            alt="Результат похудения котика">
+          <div class="result__range">
+            <button type="button" class="result__button">Было</button>
+            <div class="result__range-cotrol">
+              <div class="result__range-scale">
+                <div class="result__range-bar"></div>
+                <div class="result__range-toogle">
+                  <div class="result__range-pin"></div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="result__button">Стало</button>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -160,10 +172,9 @@
       <div class="cooperation-map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.320858716211177!3d59.938719169054096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595849989962!5m2!1sru!2sru"
-          width="100%" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-          tabindex="0"></iframe>
+          width="100%" height="100%" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
-    </section>
+      </section>
     <div class="container">
       <div class="page-footer-wrapper">
         <div class="page-footer__logo">

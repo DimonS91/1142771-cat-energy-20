@@ -1,18 +1,21 @@
 .additional-products-item-wrapper {
   @media (min-width: $tablet-width) {
+    padding-top: 26px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     width: 896px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .additional-products-wrapper {
     display: flex;
-    justify-content: space-between;
   }
 }
 
@@ -21,11 +24,45 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
+  margin: 0;
+  padding-top: 28px;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 68px;
+    padding-bottom: 80px;
+    padding-left: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 76px;
+    padding-bottom: 81px;
+    padding-left: 0;
+  }
+}
+
+.additional-products-list {
+  @media (min-width: $tablet-width) {
+    border: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 }
 
 .additional-products-item {
+  padding-bottom: 19px;
+  border-top: 1px solid #cdcdcd;
+
+
   @media (min-width: $tablet-width) {
     padding: 0 38px;
+    padding-bottom: 26px;
+    border-top: none;
+    border-bottom: 1px solid #cdcdcd;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,14 +71,36 @@
     justify-content: space-between;
     padding: 15px 0;
     margin-right: 79px;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: none;
   }
 }
 
+.additional-products-item:last-child {
+  border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+
 .additional-products-item b {
+  display: inline-block;
   font-size: 16px;
   line-height: 16px;
   font-weight: normal;
   text-transform: uppercase;
+  padding-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .additional-products-item__table {
@@ -50,15 +109,29 @@
   font-size: 14px;
   line-height: 14px;
   color: $main-color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .additional-products-all {
+  margin-top: 29px;
   background: url("../../img/gift-photo-mobile@1x.jpg");
   min-height: 289px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 68px;
+  }
 }
 
 .additional-products-all__description {
+  width: 161px;
+  text-align: center;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  margin: auto;
+  padding-top: 186px;
 }

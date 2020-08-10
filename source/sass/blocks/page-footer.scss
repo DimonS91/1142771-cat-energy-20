@@ -4,9 +4,11 @@
 }
 
 .page-footer-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .page-footer__logo {

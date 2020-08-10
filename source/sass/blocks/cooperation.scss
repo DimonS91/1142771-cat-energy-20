@@ -1,3 +1,9 @@
+.cooperation {
+  position: relative;
+  background-color: #ffffff;
+}
+
+
 .cooperation__title {
   margin: 0;
   width: 142px;
@@ -41,13 +47,32 @@
 .cooperation-wrapper {
   display: flex;
   justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 66px;
+    padding-bottom: 51px;
+  }
 
   @media (min-width: $desktop-width) {
-    display: flex;
+    position: absolute;
     justify-content: space-around;
     background-color: #ffffff;
-    position: absolute;
     width: 570px;
+    top: 95px;
+  }
+}
+
+.cooperation-map {
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
   }
 }
 
