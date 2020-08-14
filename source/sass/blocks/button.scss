@@ -60,3 +60,23 @@
     padding: 10px 39px;
   }
 }
+
+.additional-products__button {
+  @media (min-width: $tablet-width) {
+    width: 633px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 244px;
+    font-size: 16px;
+    padding: 11px 33px;
+    margin: auto;
+  }
+}
+
+.form-order__button {
+  margin-top: 34px;
+  margin-bottom: 21px;
+}

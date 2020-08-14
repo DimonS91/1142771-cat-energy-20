@@ -9,6 +9,8 @@
 }
 
 .promo-background {
+  margin-left: 50%;
+  transform: translateX(-50%);
   position: absolute;
   background: url("../img/index-background-mobile@1x.jpg") no-repeat;
   background-size: cover;
@@ -24,30 +26,10 @@
   @media (min-width: $desktop-width) {
     background: url("../img/index-background-desktop@1x.jpg") no-repeat;
     background-position: right;
+    background-size: 50%;
     height: 696px;
   }
 }
-
-// .promo-background2 {
-//   position: absolute;
-//   background: url("../img/index-can-mobile@1x.png") no-repeat;
-//   background-position: center center;
-//   width: 280px;
-//   height: 270px;
-
-
-//   @media (min-width: $tablet-width) {
-//     background: url("../img/index-can-tablet@1x.jpg") no-repeat;
-//     background-position: center center;
-//     width: 100%;
-//     height: 609px;
-//   }
-
-//   @media (min-width: $tablet-width) {
-//     background: url("../img/index-can-desktop@1x.png") no-repeat;
-//     background-position: center center;
-//   }
-// }
 
 .promo__title {
   position: relative;
@@ -128,9 +110,10 @@
 .promo-image-desktop {
   display: none;
 
-  // @media (min-width: $desktop-width) {
-  //   display: block;
-  //   top: 143px;
-  //   margin: auto;
-  // }
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    display: block;
+    top: 143px;
+    margin-left: 448px;
+  }
 }
