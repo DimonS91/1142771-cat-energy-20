@@ -68,10 +68,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: block;
     width: 244px;
     font-size: 16px;
-    vertical-align: middle;
-    margin: 0;
+    padding: 11px 33px;
+    margin: auto;
   }
 }
 
