@@ -169,13 +169,25 @@
   background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
   min-height: 289px;
 
+  @media (min-resolution: 144dpi) {
+    background: url("../img/gift-photo-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     background: url("../img/gift-photo-tablet@1x.jpg") no-repeat;
+
+    @media (min-resolution: 144dpi) {
+      background: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
     background: url("../img/gift-photo-desktop@1x.jpg") no-repeat;
+
+    @media (min-resolution: 144dpi) {
+      background: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 }
 
