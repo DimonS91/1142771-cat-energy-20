@@ -109,6 +109,22 @@
   }
 }
 
+.main-nav__toggle--close {
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 24px;
+  height: 16px;
+}
+
+.main-nav__toggle--open {
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 18px;
+  height: 18px;
+}
+
 .main-nav--closed {
   position: absolute;
   opacity: 0;
