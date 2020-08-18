@@ -17,6 +17,19 @@
   }
 }
 
+.header-menu__logo {
+  @media (min-width: $tablet-width) {
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+
 .header-menu-wrapper {
   width: 280px;
   display: flex;
@@ -33,35 +46,5 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-  }
-}
-
-.header-menu__logo-mobile {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.header-menu__logo-tablet {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.header-menu__logo-desktop {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: block;
   }
 }
