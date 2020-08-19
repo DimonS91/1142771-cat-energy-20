@@ -43,7 +43,7 @@
 }
 
 .page-footer__copyright {
-  width: 281px;
+  width: 280px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -115,10 +115,10 @@
   }
 }
 
-.academy-link {
+.academy-link svg {
   width: 40px;
-  height: 34px;
-  padding-top: 21px;
+  height: 47px;
+  // padding-top: 21px;
   fill: #666666;
 
   &:hover {
@@ -136,7 +136,7 @@
 
 .copyright__description {
   margin: 0;
-  padding-top: 22px;
+  // padding-top: 22px;
   font-size: 16px;
   line-height: 18px;
   color: #444444;

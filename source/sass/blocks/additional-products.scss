@@ -186,8 +186,10 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    width: 245px;
     min-height: 289px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
+
 
     @media (min-resolution: 144dpi) {
       background-image: url("../img/gift-photo-desktop@2x.jpg");
