@@ -6,6 +6,7 @@
 
   @media (min-width: $desktop-width) {
     border-bottom: none;
+    z-index: -1;
   }
 }
 
@@ -13,8 +14,8 @@
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    margin: auto;
     max-width: 708px;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-bottom: 0;
@@ -73,12 +74,12 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 139px;
-    margin-bottom: 37px;
+    padding-right: 139px;
+    padding-bottom: 37px;
   }
 
-  @media (min-width: $tablet-width) {
-    margin: 0;
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -90,14 +91,41 @@
     display: block;
     font-size: 280px;
     line-height: 280px;
-    left: 111px;
-    bottom: 0;
+    bottom: 37px;
     z-index: -1;
     color: #f2f2f2;
   }
 
   @media (min-width: $desktop-width) {
+    bottom: 0;
+  }
+}
+
+.preference__item--one {
+  @media (min-width: $tablet-width) {
     left: 118px;
+  }
+}
+
+.preference__item--two {
+  @media (min-width: $tablet-width) {
+    left: 112px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 111px;
+  }
+}
+
+.preference__item--three {
+  @media (min-width: $tablet-width) {
+    left: 113px;
+  }
+}
+
+.preference__item--four {
+  @media (min-width: $tablet-width) {
+    left: 113px;
   }
 }
 
