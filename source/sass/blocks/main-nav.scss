@@ -1,6 +1,6 @@
 .main-nav__wrapper {
   @media (min-width: $desktop-width) {
-    z-index: 3;
+    z-index: 2;
   }
 }
 
@@ -28,6 +28,10 @@
   @media (min-width: $tablet-width) {
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 27px;
+  }
 }
 
 .main-nav__item:last-of-type {
@@ -48,7 +52,6 @@
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
-
 
   &:hover {
     opacity: 0.6;
@@ -78,6 +81,7 @@
 }
 
 .main-nav__link--active {
+  padding-bottom: 7px;
   border-bottom: 2px solid #68b738;
 
   @media (min-width: $tablet-width) {

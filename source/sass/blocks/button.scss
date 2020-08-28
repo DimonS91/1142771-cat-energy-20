@@ -27,9 +27,9 @@
     position: absolute;
     display: inline-block;
     font-size: 20px;
-    padding: 18px 26px;
-    top: 277px;
-    margin-left: 85px;
+    padding: 18px 27px 18px 26px;
+    top: 273px;
+    margin-left: 82px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,15 +39,16 @@
 }
 
 .catalog-item__button {
+  font-size: 16px;
+
   @media (min-width: $tablet-width) {
     display: inline-block;
-    font-size: 16px;
-    padding: 10px 93px;
+    padding: 10px 94px 11px 93px;
     margin-left: 39px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 10px 53px;
+    padding: 11px 53px 11px 54px;
   }
 }
 
@@ -74,14 +75,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 10px 39px;
+    margin-top: 85px;
+    margin-left: 36px;
+    padding: 11px 39px 11px 39px;
   }
 }
 
 .additional-products__button {
+  font-size: 16px;
+
   @media (min-width: $tablet-width) {
-    width: 633px;
-    font-size: 16px;
+    width: 631px;
+    padding: 10px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -94,6 +99,25 @@
 }
 
 .form-order__button {
-  margin-top: 34px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 20px;
   margin-bottom: 21px;
+  padding-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    font-weight: normal;
+    width: 282px;
+    margin-right: 60px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+  }
 }

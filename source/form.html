@@ -67,7 +67,7 @@ s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img src="img/logo-mobile.svg" alt="Логотип" width="202" height="60" class="header-menu__logo-mobile">
+            <img src="img/logo-mobile.svg" alt="Логотип" class="header-menu__logo-image">
           </picture>
         </a>
 
@@ -123,7 +123,7 @@ s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
               <ul class="form-order__radio-fields reset-list">
                 <li class="form-order__radio-field">
                   <input type="radio" id="slimming" name="goal" value="slim" checked
-                    class="form-order__input visually-hidden">
+                    class="form-order__input form-order__input--radio visually-hidden">
                   <label for="slimming" class="form-order__label-radio">Похудение</label>
                 </li>
                 <li class="form-order__radio-field">
@@ -170,12 +170,12 @@ s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
               <legend class="form-order__title">Комментарий</legend>
             </div>
 
-            <textarea name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea name="comment"  placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
           <fieldset class="form-order form-order__checkbox">
             <div class="form-order__green-line">
-              <legend class="form-order__title">Дополнительно</legend>
+              <legend class="form-order__title form-order__title--add">Дополнительно</legend>
             </div>
 
             <ul class="form-order__checkbox-fields reset-list">
@@ -216,7 +216,7 @@ s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
 
       <div class="container">
         <div class="cooperation-wrapper">
-          <h2 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h2>
+          <h2 class="cooperation__title">приглашаем<br> к сотрудничеству дилеров!</h2>
           <p class="cooperation__description text-font">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
       </div>
