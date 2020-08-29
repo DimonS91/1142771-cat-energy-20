@@ -30,7 +30,7 @@ const styles = () => {
     .pipe(csso())
     .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
@@ -67,7 +67,7 @@ exports.compress = compress;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
