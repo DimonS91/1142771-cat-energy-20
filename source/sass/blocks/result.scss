@@ -172,13 +172,14 @@
 }
 
 .result__food-costs {
-  display: inline-block;
+  display: block;
   text-align: center;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
   padding-top: 22px;
   padding-bottom: 19px;
+
 
   @media (min-width: $tablet-width) {
     display: block;

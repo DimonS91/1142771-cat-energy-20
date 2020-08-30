@@ -11,7 +11,7 @@
 }
 
 .preference__list {
-  padding-bottom: 22px;
+  padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     max-width: 708px;
@@ -75,7 +75,7 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 139px;
-    padding-bottom: 37px;
+    padding-bottom: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -91,7 +91,7 @@
     display: block;
     font-size: 280px;
     line-height: 280px;
-    bottom: 37px;
+    bottom: 15px;
     z-index: -1;
     color: #f2f2f2;
   }
