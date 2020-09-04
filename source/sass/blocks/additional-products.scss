@@ -1,4 +1,4 @@
-.additional-products-item-wrapper {
+.additional-products__item-wrapper {
   @media (min-width: $tablet-width) {
     padding-top: 17px;
     padding-bottom: 6px;
@@ -13,7 +13,7 @@
   }
 }
 
-.additional-products-wrapper {
+.additional-products__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
     padding-bottom: 86px;
@@ -43,7 +43,7 @@
 }
 
 
-.additional-products-title {
+.additional-products__title {
   display: inline-block;
   color: $card-poducts-title;
   font-size: 24px;
@@ -76,7 +76,7 @@
   }
 }
 
-.additional-products-list {
+.additional-products__list {
   @media (min-width: $tablet-width) {
     border: 1px solid #cdcdcd;
   }
@@ -86,7 +86,7 @@
   }
 }
 
-.additional-products-item {
+.additional-products__item {
   padding-bottom: 16px;
   border-top: 1px solid #cdcdcd;
 
@@ -109,7 +109,7 @@
   }
 }
 
-.additional-products-item:last-child {
+.additional-products__item:last-child {
   border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
@@ -121,7 +121,7 @@
   }
 }
 
-.additional-products-item b {
+.additional-products__item b {
   display: inline-block;
   font-size: 16px;
   line-height: 16px;
@@ -136,7 +136,7 @@
   }
 }
 
-.additional-products-item__table {
+.additional-products__item-table {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
@@ -156,20 +156,20 @@
   }
 }
 
-.additional-products-item__table dt {
+.additional-products__item-table dt {
   @media (min-width: $tablet-width) {
     padding-right: 10px;
   }
 }
 
-.additional-products-item__table dd {
+.additional-products__item-table dd {
   @media (min-width: $desktop-width) {
     margin-right: 40px;
     text-align: left;
   }
 }
 
-.additional-products-all {
+.additional-products__all {
   position: relative;
   margin-top: 40px;
   margin-bottom: 35px;
@@ -206,7 +206,7 @@
   }
 }
 
-.additional-products-all svg {
+.additional-products__all svg {
   position: absolute;
   width: 56px;
   height: 60px;
@@ -229,7 +229,7 @@
   }
 }
 
-.additional-products-all__description {
+.additional-products__all-description {
   width: 161px;
   text-align: center;
   font-size: 16px;

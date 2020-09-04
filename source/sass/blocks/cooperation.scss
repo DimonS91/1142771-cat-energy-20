@@ -31,6 +31,7 @@
   width: 140px;
   font-size: 14px;
   line-height: 20px;
+  color: #444444;
 
   @media (min-width: $tablet-width) {
     width: 159px;
@@ -53,60 +54,4 @@
     display: block;
     margin-top: 23px;
   }
-}
-
-.cooperation-wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 28px;
-  padding-bottom: 26px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 67px;
-    padding-bottom: 55px;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    justify-content: space-around;
-    background-color: #ffffff;
-    width: 570px;
-    top: 95px;
-    padding-bottom: 57px;
-  }
-}
-
-.cooperation-map {
-  background-image: url("../img/bg-map-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 362px;
-  width: 100%;
-
-  @media (min-resolution: 144dpi) {
-    background-image: url("../img/bg-map-mobile@2x.png");
-  }
-
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/bg-map-tablet@1x.png");
-    height: 400px;
-
-    @media (min-resolution: 144dpi) {
-      background-image: url("../img/bg-map-tablet@2x.png");
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url("../img/bg-map-desktop@1x.png");
-    height: 400px;
-
-    @media (min-resolution: 144dpi) {
-      background-image: url("../img/bg-map-desktop@2x.png");
-    }
-  }
-}
-
-.catalog-and-form {
-  background-color: #f2f2f2;
 }

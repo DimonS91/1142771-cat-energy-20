@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -60,28 +64,28 @@ s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
   </svg>
 
   <header class="page-header">
-    <!-- <div class="container"> -->
-      <div class="header-menu">
-        <div class="header-menu-wrapper">
-          <a href="index.html" class="header-menu__logo">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img src="img/logo-mobile.svg" alt="Логотип" class="header-menu__logo-image">
-            </picture>
-          </a>
+    <div class="header-menu">
+      <div class="header-menu-wrapper">
+        <a href="index.html" class="header-menu__logo">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" alt="Логотип" class="header-menu__logo-image">
+          </picture>
+        </a>
 
-          <button class="main-nav__toggle main-nav__toggle--close" type="button"></button>
-        </div>
+
+        <button class="header-menu__toggle header-menu__toggle-close no-js" type="button" aria-label="open/close menu button"></button>
+      </div>
 
       <nav class="main-nav">
-        <div class="main-nav__wrapper main-nav--closed">
-          <ul class="main-nav__list site-list reset-list">
+        <div class="main-nav__wrapper menu-opened">
+          <ul class="main-nav__list  site-list reset-list">
             <li class="main-nav__item">
               <a href="index.html" class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--active">Каталог продукции</a>
+              <a href="#" class="main-nav__link main-nav__link--active">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
               <a href="form.html" class="main-nav__link">Подбор программы</a>
@@ -90,7 +94,6 @@ s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
         </div>
       </nav>
     </div>
-    <!-- </div> -->
   </header>
 
   <main class="page-main">
@@ -100,7 +103,7 @@ s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
       <div class="container">
         <h2 class="catalog__title">Каталог продукции</h2>
 
-        <ul class="catalog-list reset-list">
+        <ul class="catalog__list reset-list">
           <li class="catalog-item">
             <picture>
               <source media="(min-width: 1440px)" srcset="img/webp/chicken-small-desktop@1x.webp 1x, img/webp/chicken-small-desktop@2x.webp 2x" type="image/webp">
@@ -127,7 +130,7 @@ s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
                 <dd>700 Р.</dd>
               </div>
             </dl>
-            <a href="#" class="catalog-item__button button">Заказать</a>
+            <a href="#" class="button__catalog-item button">Заказать</a>
           </li>
 
           <li class="catalog-item">
@@ -157,7 +160,7 @@ s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
               </div>
 
             </dl>
-            <a href="#" class="catalog-item__button button">Заказать</a>
+            <a href="#" class="button__catalog-item button">Заказать</a>
           </li>
 
           <li class="catalog-item">
@@ -165,8 +168,8 @@ s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
               <source media="(min-width: 1440px)" srcset="img/webp/fish-small-desktop@1x.webp 1x, img/webp/fish-small-desktop@2x.webp 2x" type="image/webp">
               <source media="(min-width: 768px)" srcset="img/webp/fish-small-tablet@1x.webp 1x, img/webp/fish-small-tablet@2x.webp 2x" type="image/webp">
               <source srcset="img/webp/fish-small-mobile@1x.webp 1x, img/webp/fish-small-mobile@2x.webp 2x" type="image/webp">
-              <source media="(min-width: 1440px)" srcset="img/fish-small-desktop@1x.png, img/fish-small-desktop@2x.png 2px">
-              <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png, img/fish-small-tablet@2x.png 2px">
+              <source media="(min-width: 1440px)" srcset="img/fish-small-desktop@1x.png, img/fish-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png, img/fish-small-tablet@2x.png 2x">
               <img src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Картинка с кормом из курицы" class="catalog-item__image-small catalog-item__image-small--fish">
             </picture>
             <h3 class="catalog-item__title">Cat Energy PRO 500 г</h3>
@@ -187,7 +190,7 @@ s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
               </div>
 
             </dl>
-            <a href="#" class="catalog-item__button button">Заказать</a>
+            <a href="#" class="button__catalog-item button">Заказать</a>
           </li>
 
           <li class="catalog-item">
@@ -217,7 +220,7 @@ s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
               </div>
 
             </dl>
-            <a href="#" class="catalog-item__button button">Заказать</a>
+            <a href="#" class="button__catalog-item button">Заказать</a>
           </li>
 
           <li class="catalog-item">
@@ -247,7 +250,7 @@ s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
               </div>
 
             </dl>
-            <a href="#" class="catalog-item__button button">Заказать</a>
+            <a href="#" class="button__catalog-item button">Заказать</a>
           </li>
 
           <li class="catalog-item">
@@ -277,7 +280,7 @@ s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
               </div>
 
             </dl>
-            <a href="#" class="catalog-item__button button">Заказать</a>
+            <a href="#" class="button__catalog-item button">Заказать</a>
           </li>
 
           <li class="catalog-item">
@@ -307,13 +310,13 @@ s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
               </div>
 
             </dl>
-            <a href="#" class="catalog-item__button button">Заказать</a>
+            <a href="#" class="button__catalog-item button">Заказать</a>
           </li>
 
           <li class="catalog-item catalog-item-all">
             <p class="catalog-item-all__title">Показать еще 100500 товаров</p>
             <small class="text-font">На самом деле вкусов гораздо больше!</small>
-            <a href="#" class="catalog-item-all__button button">Показать все</a>
+            <a href="#" class="button__catalog-item-all button">Показать все</a>
           </li>
         </ul>
       </div>
@@ -323,55 +326,55 @@ s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
 
     <section class="additional-products">
       <div class="container">
-        <h2 class="additional-products-title">Дополнительные товары</h2>
-        <div class="additional-products-wrapper">
-          <ul class="additional-products-list reset-list">
-            <li class="additional-products-item">
-              <div class="additional-products-item-wrapper">
+        <h2 class="additional-products__title">Дополнительные товары</h2>
+        <div class="additional-products__wrapper">
+          <ul class="additional-products__list reset-list">
+            <li class="additional-products__item">
+              <div class="additional-products__item-wrapper">
                 <b>Сахарозаменитель</b>
-                <dl class="additional-products-item__table text-font">
+                <dl class="additional-products__item-table text-font">
                   <dt>1 упаковка (100 г)</dt>
                   <dd>200 Р</dd>
                 </dl>
               </div>
-              <a href="#" class="additional-products__button button">Заказать</a>
+              <a href="#" class="button__additional-products button">Заказать</a>
             </li>
-            <li class="additional-products-item">
-              <div class="additional-products-item-wrapper">
+            <li class="additional-products__item">
+              <div class="additional-products__item-wrapper">
                 <b>Питьевая вода</b>
-                <dl class="additional-products-item__table text-font">
+                <dl class="additional-products__item-table text-font">
                   <dt>5 литров&nbsp;&nbsp;</dt>
                   <dd>50 Р</dd>
                 </dl>
               </div>
-              <a href="#" class="additional-products__button button">Заказать</a>
+              <a href="#" class="button__additional-products button">Заказать</a>
             </li>
-            <li class="additional-products-item">
-              <div class="additional-products-item-wrapper">
+            <li class="additional-products__item">
+              <div class="additional-products__item-wrapper">
                 <b>Молоко</b>
-                <dl class="additional-products-item__table text-font">
+                <dl class="additional-products__item-table text-font">
                   <dt>1 литр</dt>
                   <dd>100 Р</dd>
                 </dl>
               </div>
-              <a href="#" class="additional-products__button button">Заказать</a>
+              <a href="#" class="button__additional-products button">Заказать</a>
             </li>
-            <li class="additional-products-item">
-              <div class="additional-products-item-wrapper">
+            <li class="additional-products__item">
+              <div class="additional-products__item-wrapper">
                 <b>Витамины</b>
-                <dl class="additional-products-item__table text-font">
+                <dl class="additional-products__item-table text-font">
                   <dt>1 упаковка (30 г)</dt>
                   <dd>300 Р</dd>
                 </dl>
               </div>
-              <a href="#" class="additional-products__button button">Заказать</a>
+              <a href="#" class="button__additional-products button">Заказать</a>
             </li>
           </ul>
-          <div class="additional-products-all">
-            <svg>
+          <div class="additional-products__all">
+            <svg width="55" height="60">
               <use xlink:href="#gift"></use>
             </svg>
-            <p class="additional-products-all__description text-font">
+            <p class="additional-products__all-description text-font">
               Закажите все<br> и получите чехол для кота в подарок!
             </p>
           </div>
@@ -396,7 +399,7 @@ s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
       <div class="cooperation-map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.320858716211177!3d59.938719169054096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595849989962!5m2!1sru!2sru"
-          width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          style="border:0;" allowfullscreen="" aria-hidden="false"
           tabindex="0"></iframe>
       </div>
     </section>
@@ -410,22 +413,22 @@ s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
         <div class="page-footer__social social">
           <ul class="social__list reset-list">
             <li class="social__item social__item-vk">
-              <a href="#" class="social__link-vk">
-                <svg>
+              <a href="#" class="social__link-vk" aria-label="vk link">
+                <svg width="22" height="12">
                   <use xlink:href="#vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item social__item-insta">
-              <a href="#" class="social__link-inst">
-                <svg>
-                <use xlink:href="#insta"></use>
+              <a href="#" class="social__link-inst" aria-label="instagram link">
+                <svg width="16" height="16">
+                  <use xlink:href="#insta"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item social__item-fb">
-              <a href="#" class="social__link-fb">
-                <svg>
+              <a href="#" class="social__link-fb" aria-label="facebook link">
+                <svg width="10" height="19">
                   <use xlink:href="#fb"></use>
                 </svg>
               </a>
@@ -434,8 +437,8 @@ s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
         </div>
         <div class="page-footer__copyright copyright">
           <p class="copyright__description text-font">HTML Academy</p>
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="academy-link">
-            <svg>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__academy-link" aria-label="html academy link">
+            <svg width="60" height="60">
               <use xlink:href="#academy"></use>
             </svg>
           </a>

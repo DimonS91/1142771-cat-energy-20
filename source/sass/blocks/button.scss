@@ -22,7 +22,7 @@
   }
 }
 
-.promo__button {
+.button__promo {
   @media (min-width: $tablet-width) {
     position: absolute;
     display: inline-block;
@@ -38,7 +38,7 @@
   }
 }
 
-.catalog-item__button {
+.button__catalog-item {
   font-size: 16px;
 
   @media (min-width: $tablet-width) {
@@ -52,7 +52,7 @@
   }
 }
 
-.catalog-item-all__button {
+.button__catalog-item-all {
   margin-top: 21px;
   background-color: #f2f2f2;
   color: #444444;
@@ -81,7 +81,7 @@
   }
 }
 
-.additional-products__button {
+.button__additional-products {
   font-size: 16px;
 
   @media (min-width: $tablet-width) {
@@ -98,7 +98,7 @@
   }
 }
 
-.form-order__button {
+.button__form-order {
   width: 100%;
   border: none;
   cursor: pointer;

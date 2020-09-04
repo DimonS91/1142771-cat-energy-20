@@ -8,7 +8,7 @@
   }
 }
 
-.promo-background {
+.promo__background {
   margin-left: 50%;
   transform: translateX(-50%);
   position: absolute;
@@ -99,7 +99,7 @@
   }
 }
 
-.promo-image {
+.promo__image {
   @media (min-width: $desktop-width) {
     position: absolute;
     display: block;
